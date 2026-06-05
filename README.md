@@ -19,7 +19,7 @@ This repository contains my personal portfolio website showcasing my:
 
 ## Live Demo
 
-https://leafy-palmier-64718d.netlify.app/
+https://tiny-mandazi-4d2f49.netlify.app/
 
 ## Author
 
