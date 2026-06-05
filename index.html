@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Saad Ali | Data Science & ML Engineer</title>
+    <meta name="description" content="Portfolio of Muhammad Saad Ali - Data Science Graduate and Machine Learning Enthusiast">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Library for Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#0ea5e9',
+                        dark: '#0f172a',
+                        darker: '#020617',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darker text-slate-200 font-sans antialiased overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 top-0 left-0 bg-darker/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">MSA.</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="hover:text-primary transition-colors duration-300">Home</a>
+                        <a href="#about" class="hover:text-primary transition-colors duration-300">About</a>
+                        <a href="#skills" class="hover:text-primary transition-colors duration-300">Skills</a>
+                        <a href="#projects" class="hover:text-primary transition-colors duration-300">Projects</a>
+                        <a href="#experience" class="hover:text-primary transition-colors duration-300">Experience</a>
+                        <a href="#education" class="hover:text-primary transition-colors duration-300">Education</a>
+                        <a href="#learning" class="hover:text-primary transition-colors duration-300">Currently Learning</a>
+                        <a href="#contact" class="px-4 py-2 rounded-full bg-primary hover:bg-opacity-80 transition-all">Contact Me</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-dark px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="#home" class="block px-3 py-2 rounded-md hover:bg-slate-800">Home</a>
+            <a href="#about" class="block px-3 py-2 rounded-md hover:bg-slate-800">About</a>
+            <a href="#skills" class="block px-3 py-2 rounded-md hover:bg-slate-800">Skills</a>
+            <a href="#experience" class="block px-3 py-2 rounded-md hover:bg-slate-800">Experience</a>
+            <a href="#education" class="block px-3 py-2 rounded-md hover:bg-slate-800">Education</a>
+            <a href="#learning" class="block px-3 py-2 rounded-md hover:bg-slate-800">Currently Learning</a>
+            <a href="#projects" class="block px-3 py-2 rounded-md hover:bg-slate-800">Projects</a>
+            <a href="#contact" class="block px-3 py-2 rounded-md hover:bg-slate-800 text-primary">Contact</a>
+        </div>
+    </nav>
+
+  <!-- Hero Section -->
+<section id="home" class="min-h-screen flex items-center pt-20 relative overflow-hidden">
+
+    <!-- Background Glow -->
+    <div class="absolute top-0 right-0 -z-10 w-96 h-96 bg-primary/20 rounded-full blur-[100px]"></div>
+    <div class="absolute bottom-0 left-0 -z-10 w-96 h-96 bg-secondary/10 rounded-full blur-[100px]"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
+
+        <div data-aos="fade-up" data-aos-duration="1000">
+
+            <!-- Status Badge -->
+            <span class="inline-block py-1 px-4 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 text-sm font-medium mb-6">
+                Available for Full-Time Opportunities
+            </span>
+
+            <!-- Name -->
+            <h1 class="text-5xl md:text-7xl font-bold font-heading mb-6 tracking-tight leading-tight">
+                Muhammad <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Saad Ali</span>
+            </h1>
+
+            <!-- Title -->
+            <h2 class="text-xl md:text-3xl font-semibold text-slate-300 mb-6">
+                Data Science Graduate | Machine Learning Enthusiast | AI Developer
+            </h2>
+
+            <!-- Description -->
+            <p class="text-lg md:text-xl text-slate-400 max-w-4xl mx-auto mb-10 leading-relaxed">
+                Recent Data Science graduate from
+                <a href="https://www.kfueit.edu.pk/"
+                   target="_blank"
+                   class="text-primary hover:text-white transition">
+                    Khawaja Fareed University of Engineering & Information Technology (KFUEIT)
+                </a>
+                with hands-on experience in Machine Learning, Artificial Intelligence, Data Analytics, and intelligent software solutions.
+                Passionate about building AI-powered applications that solve real-world problems.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+
+                <a href="#projects"
+                   class="px-8 py-3 rounded-full bg-primary text-white font-semibold hover:shadow-[0_0_20px_rgba(99,102,241,0.5)] transition-all">
+                    View Projects
+                </a>
+
+                <a href="./My-Resume.pdf"
+                   download
+                   class="px-8 py-3 rounded-full border border-slate-700 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-all">
+                    Download Resume
+                </a>
+
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto mb-10">
+
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+                    <h3 class="text-3xl font-bold text-primary mb-2">3+</h3>
+                    <p class="text-slate-400">Projects Completed</p>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+                    <h3 class="text-3xl font-bold text-primary mb-2">2026</h3>
+                    <p class="text-slate-400">Graduate</p>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+                    <h3 class="text-3xl font-bold text-primary mb-2">AI</h3>
+                    <p class="text-slate-400">Specialization</p>
+                </div>
+
+            </div>
+
+            <!-- Social Links -->
+            <div class="flex justify-center gap-4">
+
+                <a href="https://github.com/sa4552279-jpg"
+                   target="_blank"
+                   class="p-3 rounded-full border border-slate-700 hover:text-primary transition-all">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/muhammad-saad-ali-68097029a/"
+                   target="_blank"
+                   class="p-3 rounded-full border border-slate-700 hover:text-primary transition-all">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+            
+            <!-- Mouse Scroll Icon -->
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+   <!-- About Section -->
+<section id="about" class="py-24 bg-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+
+            <div data-aos="fade-right">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+
+                    <div class="relative bg-darker rounded-2xl p-4">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop"
+                             alt="Data Science and AI Development"
+                             class="rounded-xl w-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-left">
+
+                <span class="inline-block py-1 px-4 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-5">
+                    About Me
+                </span>
+
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 font-heading">
+                    Building Intelligent Solutions with
+                    <span class="text-primary">Data & AI</span>
+                </h2>
+
+                <p class="text-slate-400 text-lg mb-5 leading-relaxed">
+                    I am a Data Science graduate from
+                    <a href="https://www.kfueit.edu.pk/"
+                       target="_blank"
+                       class="text-primary hover:text-white transition">
+                        Khawaja Fareed University of Engineering & Information Technology (KFUEIT)
+                    </a>
+                    with hands-on experience in Machine Learning, Artificial Intelligence, Data Analytics,
+                    and web-based AI applications.
+                </p>
+
+                <p class="text-slate-400 text-lg mb-5 leading-relaxed">
+                    My final year project, <span class="text-white font-semibold">AI Interview Preparation Assistant</span>,
+                    helped me work with AI-based question handling, interview practice workflows,
+                    performance evaluation, and personalized feedback systems.
+                </p>
+
+                <p class="text-slate-400 text-lg mb-8 leading-relaxed">
+                    I am currently improving my practical development skills through internship work and real-world projects,
+                    including a rule-based AI chatbot focused on control flow, intent matching, and interactive user responses.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+
+                    <div class="p-5 rounded-xl bg-white/5 border border-white/10 hover:border-primary/40 transition">
+                        <h3 class="text-white font-bold text-2xl">Python</h3>
+                        <p class="text-slate-500 mt-1">Primary Programming Language</p>
+                    </div>
+
+                    <div class="p-5 rounded-xl bg-white/5 border border-white/10 hover:border-primary/40 transition">
+                        <h3 class="text-white font-bold text-2xl">ML & AI</h3>
+                        <p class="text-slate-500 mt-1">Core Technical Focus</p>
+                    </div>
+
+                    <div class="p-5 rounded-xl bg-white/5 border border-white/10 hover:border-primary/40 transition">
+                        <h3 class="text-white font-bold text-2xl">Data</h3>
+                        <p class="text-slate-500 mt-1">Analytics & Problem Solving</p>
+                    </div>
+
+                    <div class="p-5 rounded-xl bg-white/5 border border-white/10 hover:border-primary/40 transition">
+                        <h3 class="text-white font-bold text-2xl">Web</h3>
+                        <p class="text-slate-500 mt-1">AI Application Interfaces</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+   <!-- Skills Section -->
+<section id="skills" class="py-24 bg-darker relative overflow-hidden">
+    <div class="absolute top-0 right-1/4 w-72 h-72 bg-primary/10 rounded-full blur-[120px] -z-10"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center mb-16" data-aos="fade-up">
+            <span class="inline-block py-1 px-4 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-4">
+                Technical Skills
+            </span>
+
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 font-heading">
+                My Technical Stack
+            </h2>
+
+            <p class="text-slate-400 max-w-2xl mx-auto text-lg">
+                Tools and technologies I use for Data Science, AI development, and web-based intelligent applications.
+            </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2">
+                <i class="fab fa-python text-4xl mb-4 text-blue-400"></i>
+                <h3 class="font-bold text-lg text-white">Python</h3>
+                <p class="text-slate-500 text-sm mt-2">Programming, scripting, automation, and ML workflows.</p>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2">
+                <i class="fas fa-brain text-4xl mb-4 text-purple-400"></i>
+                <h3 class="font-bold text-lg text-white">Machine Learning</h3>
+                <p class="text-slate-500 text-sm mt-2">Model training, evaluation, classification, and prediction tasks.</p>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2">
+                <i class="fas fa-chart-line text-4xl mb-4 text-pink-400"></i>
+                <h3 class="font-bold text-lg text-white">Data Analysis</h3>
+                <p class="text-slate-500 text-sm mt-2">Pandas, NumPy, EDA, visualization, and data cleaning.</p>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2">
+                <i class="fas fa-database text-4xl mb-4 text-emerald-400"></i>
+                <h3 class="font-bold text-lg text-white">SQL</h3>
+                <p class="text-slate-500 text-sm mt-2">Database queries, filtering, joins, and structured data handling.</p>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2">
+                <i class="fas fa-code text-4xl mb-4 text-green-400"></i>
+                <h3 class="font-bold text-lg text-white">Flask</h3>
+                <p class="text-slate-500 text-sm mt-2">Building Python-based web apps and backend routes.</p>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2">
+                <i class="fas fa-robot text-4xl mb-4 text-orange-400"></i>
+                <h3 class="font-bold text-lg text-white">AI Applications</h3>
+                <p class="text-slate-500 text-sm mt-2">AI tools, chatbot logic, interview systems, and automation ideas.</p>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2">
+                <i class="fab fa-git-alt text-4xl mb-4 text-red-400"></i>
+                <h3 class="font-bold text-lg text-white">Git & GitHub</h3>
+                <p class="text-slate-500 text-sm mt-2">Version control, repository management, and project hosting.</p>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all hover:-translate-y-2">
+                <i class="fab fa-html5 text-4xl mb-4 text-orange-500"></i>
+                <h3 class="font-bold text-lg text-white">Web Basics</h3>
+                <p class="text-slate-500 text-sm mt-2">HTML, CSS, JavaScript, responsive layouts, and portfolio UI.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+<section id="projects" class="py-24 bg-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 font-heading">Featured Projects</h2>
+            <p class="text-slate-400 max-w-2xl mx-auto">
+                Real projects and work currently in progress.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Project 1 -->
+            <div class="rounded-2xl bg-darker border border-white/10 overflow-hidden group hover:border-primary/50 transition-all" data-aos="fade-up">
+                <div class="h-48 bg-slate-800 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=600&auto=format&fit=crop" alt="AI Interview Assistant" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">AI Interview Preparation Assistant</h3>
+                    <p class="text-slate-400 text-sm mb-4">
+                        My final year project: an AI-powered interview preparation system that helps users practice technical interviews, receive feedback, and track performance.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-[10px] px-2 py-1 rounded-md bg-primary/20 text-primary">Python</span>
+                        <span class="text-[10px] px-2 py-1 rounded-md bg-primary/20 text-primary">Flask</span>
+                        <span class="text-[10px] px-2 py-1 rounded-md bg-primary/20 text-primary">NLP</span>
+                        <span class="text-[10px] px-2 py-1 rounded-md bg-primary/20 text-primary">AI</span>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                        <a href="https://github.com/sa4552279-jpg/My-final-year-" target="_blank" class="text-sm font-semibold text-primary hover:underline">View Code</a>
+                        <span class="px-4 py-2 bg-slate-800 rounded-lg text-xs text-slate-400">Demo Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="rounded-2xl bg-darker border border-white/10 overflow-hidden group hover:border-primary/50 transition-all" data-aos="fade-up" data-aos-delay="100">
+                <div class="h-48 bg-slate-800 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=600&auto=format&fit=crop" alt="Portfolio Website" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Personal Portfolio Website</h3>
+                    <p class="text-slate-400 text-sm mb-4">
+                        A responsive portfolio website built to showcase my skills, education,  resume, and Data Science projects.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-[10px] px-2 py-1 rounded-md bg-primary/20 text-primary">HTML</span>
+                        <span class="text-[10px] px-2 py-1 rounded-md bg-primary/20 text-primary">CSS</span>
+                        <span class="text-[10px] px-2 py-1 rounded-md bg-primary/20 text-primary">JavaScript</span>
+                        <span class="text-[10px] px-2 py-1 rounded-md bg-primary/20 text-primary">Netlify</span>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                        <a href="https://github.com/sa4552279-jpg/My-portfolio-Website" target="_blank" class="text-sm font-semibold text-primary hover:underline">View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="rounded-2xl bg-darker border border-white/10 overflow-hidden group hover:border-primary/50 transition-all" data-aos="fade-up" data-aos-delay="200">
+                <div class="h-48 bg-slate-800 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop" alt="Currently Working On" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Rule-Based AI Chatbot</h3>
+                    <p class="text-slate-400 text-sm mb-4">
+                        Currently working on this DecodeLabs internship project. It will respond to predefined user inputs using JavaScript, control flow, and intent-based logic.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-[10px] px-2 py-1 rounded-md bg-yellow-500/20 text-yellow-400">In Progress</span>
+                        <span class="text-[10px] px-2 py-1 rounded-md bg-primary/20 text-primary">JavaScript</span>
+                        <span class="text-[10px] px-2 py-1 rounded-md bg-primary/20 text-primary">HTML</span>
+                        <span class="text-[10px] px-2 py-1 rounded-md bg-primary/20 text-primary">CSS</span>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm font-semibold text-slate-500">GitHub Coming Soon</span>
+                        <span class="px-4 py-2 bg-slate-800 rounded-lg text-xs text-slate-400">In Progress</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    <!-- Experience Section -->
+<section id="experience" class="py-24 bg-darker">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 font-heading">
+                Experience
+            </h2>
+            <p class="text-slate-400 max-w-2xl mx-auto">
+                My professional and internship experience in Artificial Intelligence and Data Science.
+            </p>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+
+            <!-- Experience Card -->
+            <div class="bg-dark border border-white/10 rounded-2xl p-8 hover:border-primary/50 transition-all duration-300">
+
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white">
+                            AI Intern
+                        </h3>
+
+                        <p class="text-primary font-medium">
+                            DecodeLabs
+                        </p>
+                    </div>
+
+                    <span class="mt-2 md:mt-0 text-slate-400 text-sm">
+                        2026 - Present
+                    </span>
+                </div>
+
+                <ul class="space-y-3 text-slate-300">
+                    <li>
+                        • Developing a Rule-Based AI Chatbot using JavaScript, HTML, and CSS.
+                    </li>
+
+                    <li>
+                        • Implementing intent-based response handling and conversational logic.
+                    </li>
+
+                    <li>
+                        • Building an interactive web-based chatbot interface.
+                    </li>
+
+                    <li>
+                        • Applying AI fundamentals, control flow, and decision-making logic.
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="py-24 bg-dark relative overflow-hidden">
+    <!-- Background Glow Decoration (Optional) -->
+    <div class="absolute top-0 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-[120px] -z-10"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center mb-20">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-4 bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">
+                Education
+            </h2>
+            <div class="h-1.5 w-20 bg-primary mx-auto rounded-full"></div>
+            <p class="text-slate-400 mt-6 max-w-2xl mx-auto text-lg">
+                My academic journey and the foundation of my technical expertise.
+            </p>
+        </div>
+
+        <!-- Timeline Item -->
+<div class="relative pl-8 sm:pl-32 py-6 group">
+
+    <!-- Vertical Line (Timeline) -->
+    <div class="absolute left-0 sm:left-16 top-0 h-full w-px bg-slate-800 group-hover:bg-primary/50 transition-colors"></div>
+
+    <!-- Timeline Dot -->
+    <div class="absolute left-[-8px] sm:left-[58px] top-10 w-4 h-4 rounded-full border-4 border-dark bg-primary shadow-[0_0_15px_rgba(var(--primary-rgb),0.5)]"></div>
+
+    <!-- Education Card -->
+    <div class="bg-darker border border-white/5 rounded-3xl p-8 hover:border-primary/30 hover:shadow-2xl hover:shadow-primary/5 transition-all duration-300 relative overflow-hidden">
+
+        <!-- Decorative Icon Background -->
+        <div class="absolute -right-8 -top-8 text-primary/5 rotate-12">
+            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            </svg>
+        </div>
+
+        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
+
+            <div>
+
+                <span class="inline-block px-3 py-1 rounded-full bg-green-500/10 text-green-400 text-xs font-bold uppercase tracking-wider mb-4">
+                    Graduate
+                </span>
+
+                <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">
+                    Bachelor of Data Science
+                </h3>
+
+                <a href="https://www.kfueit.edu.pk/"
+                   target="_blank"
+                   class="text-primary font-semibold flex items-center gap-2 hover:text-white transition duration-300">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
+
+                    Khawaja Fareed University of Engineering & Information Technology (KFUEIT)
+
+                </a>
+
+            </div>
+
+            <div class="mt-4 md:mt-0">
+                <span class="text-slate-400 font-mono bg-white/5 px-4 py-2 rounded-lg">
+                    2022 — 2026 • Graduated
+                </span>
+            </div>
+
+        </div>
+
+        <p class="text-slate-400 leading-relaxed mb-6">
+            Successfully completed a Bachelor of Data Science degree with a strong foundation in
+            <span class="text-white">Machine Learning</span>,
+            <span class="text-white">Artificial Intelligence</span>,
+            <span class="text-white">Data Analytics</span>,
+            <span class="text-white">Statistics</span>,
+            and
+            <span class="text-white">Software Development</span>.
+            Developed practical experience through academic projects, research work, and AI-based applications.
+        </p>
+
+        <!-- Key Subjects Badges -->
+        <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 text-xs font-medium bg-white/5 border border-white/10 rounded-md text-slate-300">
+                Machine Learning
+            </span>
+
+            <span class="px-3 py-1 text-xs font-medium bg-white/5 border border-white/10 rounded-md text-slate-300">
+                Data Analytics
+            </span>
+
+            <span class="px-3 py-1 text-xs font-medium bg-white/5 border border-white/10 rounded-md text-slate-300">
+                Statistics
+            </span>
+
+            <span class="px-3 py-1 text-xs font-medium bg-white/5 border border-white/10 rounded-md text-slate-300">
+                Database Systems
+            </span>
+
+            <span class="px-3 py-1 text-xs font-medium bg-white/5 border border-white/10 rounded-md text-slate-300">
+                Python Development
+            </span>
+
+            <span class="px-3 py-1 text-xs font-medium bg-white/5 border border-white/10 rounded-md text-slate-300">
+                Deep Learning
+            </span>
+
+        </div>
+
+    </div>
+    <!-- Currently Learning Section -->
+<section id="learning" class="py-24 bg-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+            <span class="inline-block py-1 px-4 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-4">
+                Growth Mindset
+            </span>
+
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                Currently Learning
+            </h2>
+
+            <p class="text-slate-400 max-w-2xl mx-auto text-lg">
+                Continuously improving my skills in Artificial Intelligence, Machine Learning, and modern software development.
+            </p>
+        </div>
+
+        <!-- Learning Cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <div class="bg-darker border border-white/10 rounded-2xl p-6 hover:border-primary/50 transition-all">
+                <div class="text-primary text-4xl mb-4">
+                    🤖
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">
+                    Machine Learning
+                </h3>
+                <p class="text-slate-400 text-sm">
+                    Improving practical ML skills through hands-on projects and real-world datasets.
+                </p>
+            </div>
+
+            <div class="bg-darker border border-white/10 rounded-2xl p-6 hover:border-primary/50 transition-all">
+                <div class="text-primary text-4xl mb-4">
+                    🧠
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">
+                    Artificial Intelligence
+                </h3>
+                <p class="text-slate-400 text-sm">
+                    Exploring intelligent systems, AI-powered applications, and automation solutions.
+                </p>
+            </div>
+
+            <div class="bg-darker border border-white/10 rounded-2xl p-6 hover:border-primary/50 transition-all">
+                <div class="text-primary text-4xl mb-4">
+                    💬
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">
+                    Prompt Engineering
+                </h3>
+                <p class="text-slate-400 text-sm">
+                    Learning effective prompt design for AI systems and large language models.
+                </p>
+            </div>
+
+            <div class="bg-darker border border-white/10 rounded-2xl p-6 hover:border-primary/50 transition-all">
+                <div class="text-primary text-4xl mb-4">
+                    🚀
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">
+                    AI Development
+                </h3>
+                <p class="text-slate-400 text-sm">
+                    Building AI-powered web applications and intelligent software solutions.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+</div>
+    <!-- Contact Section -->
+<section id="contact" class="py-24 bg-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="max-w-5xl mx-auto">
+
+            <div class="text-center mb-16">
+                <span class="inline-block py-1 px-4 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-4">
+                    Let's Connect
+                </span>
+
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    Get In Touch
+                </h2>
+
+                <p class="text-slate-400 max-w-2xl mx-auto text-lg">
+                    I'm currently open to full-time opportunities, internships, freelance projects, and AI/Data Science collaborations.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <!-- Contact Info -->
+                <div class="bg-darker border border-white/10 rounded-3xl p-8">
+
+                    <h3 class="text-2xl font-bold mb-8">
+                        Contact Information
+                    </h3>
+
+                    <div class="space-y-6">
+
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-primary"></i>
+                            </div>
+
+                            <div>
+                                <p class="text-slate-500 text-sm">Email</p>
+                                <p class="text-white">sa4552279@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mr-4">
+                                <i class="fas fa-location-dot text-primary"></i>
+                            </div>
+
+                            <div>
+                                <p class="text-slate-500 text-sm">Location</p>
+                                <p class="text-white">Pakistan</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="flex gap-4 mt-10">
+
+                        <a href="https://github.com/sa4552279-jpg"
+                           target="_blank"
+                           class="w-12 h-12 rounded-lg border border-white/10 flex items-center justify-center hover:bg-primary transition">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/muhammad-saad-ali-68097029a/"
+                           target="_blank"
+                           class="w-12 h-12 rounded-lg border border-white/10 flex items-center justify-center hover:bg-primary transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Opportunity Card -->
+                <div class="bg-darker border border-primary/20 rounded-3xl p-8 flex flex-col justify-center">
+
+                    <h3 class="text-2xl font-bold mb-4">
+                        Open For Opportunities 🚀
+                    </h3>
+
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        I am actively seeking opportunities in Data Science, Machine Learning, Artificial Intelligence, Data Analytics, and AI-powered application development.
+                    </p>
+
+                    <a href="mailto:sa4552279@gmail.com?subject=Portfolio%20Inquiry&body=Hello%20Saad,%0D%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20connect."
+   class="inline-block px-6 py-3 rounded-xl bg-primary text-white font-semibold hover:shadow-[0_0_20px_rgba(99,102,241,0.5)] transition-all text-center">
+    Contact Me
+</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-white/10 text-center">
+        <p class="text-slate-500 text-sm">
+            © <script>document.write(new Date().getFullYear())</script> Muhammad Saad Ali. Built with ❤️ for the AI community.
+        </p>
+    </footer>
+
+    <!-- Libraries -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
